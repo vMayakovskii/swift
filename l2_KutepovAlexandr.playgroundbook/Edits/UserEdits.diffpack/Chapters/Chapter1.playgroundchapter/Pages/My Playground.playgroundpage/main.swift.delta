@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// задание № 1 и № 2
+import Foundation
+
+func ChetnoOrNot() {
+    let i = c! % 2
+    if i &gt; 0 {
+        print("Число \(c!) нечетное!")
+    }else {
+        print ("Число \(c!) четное!")
+    }
+}
+func del3(){
+    let i = c! % 3
+    if i &gt; 0 {
+        print("Число \(c!) не делится на 3 без остатка!")
+    }else {
+        print ("Число \(c!) делится на 3 без остатка!")
+    }
+}
+print ("Введите число:")
+var c  = Int(readLine()!)
+ChetnoOrNot()
+del3()
+
+// Задание №3 и №4
+
+func Sotka(){
+    for i in 1...100{
+        StoArray.append(i)
+    }
+}
+func deleteCetnoe() {
+    for value in StoArray {
+        if (value % 2) == 0 {
+            StoArray.remove(at: StoArray.firstIndex(of: value)!)
+        }
+    }
+}
+func deleteNeDel3() {
+    for value in StoArray {
+        if (value % 3) == 0 {
+            StoArray.remove(at: StoArray.firstIndex(of: value)!)
+        }
+    }
+}
+var StoArray = [Int]()
+Sotka()
+print(StoArray)
+deleteCetnoe()
+print (StoArray)
+deleteNeDel3()
+print (StoArray)
+
+//Задание №5
+var fibArray: [Int] = [1,2]
+func fibonaci(count: Int) -&gt; [Int] {
+    for i in 0...count {
+        fibArray.append(fibArray[i] + fibArray[i + 1])
+    }
+    return fibArray
+}
+print(fibonaci(count: 30))
+
+//Задание #6
+var EratArray = [Int](2...500)
+for etocislo in EratArray{
+    for element in EratArray{
+        if element != etocislo &amp;&amp; element % etocislo == 0 {
+            EratArray.remove(at: EratArray.firstIndex(of: element)!)
+        }
+    }
+    if EratArray.count &gt; 50{
+        EratArray.removeLast()
+    }
+}
+print("Ваш массив:  \(EratArray)")
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1538}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

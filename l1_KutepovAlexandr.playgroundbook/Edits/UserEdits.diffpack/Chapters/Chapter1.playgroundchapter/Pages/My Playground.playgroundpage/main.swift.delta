@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+import UIKit
+//Задание №1
+let a: Double = 2
+let b: Double = 5
+let c: Double = 1
+var x = -b/2*a
+var x1 = (-b + sqrt(b*b - 4*a*c))/2*a
+var x2 = (-b - sqrt(b*b - 4*a*c))/2*a
+print("Уравнение типа \(a)x^2 + \(b)x + \(c) = 0")
+var d = b * b - 4 * a * c
+if  d==0 {
+    print("D = 0. Есть 1 корень x=\(x)")
+} else{ 
+    if d &lt; 0{
+    print ("D = \(d) следовательно D &lt; 0. корней нет!")
+    }else{
+        print("D = \(d) следовательно D &gt; 0. Есть 2 корня ")
+        print("x1 = \(x1)")
+        print("x2 = \(x2)")
+    }
+}
+
+//Задание №2
+let kat1 = 6
+let kat2 = 4
+var gip = kat1 * kat1 + kat2 * kat2
+var s = (kat1 * kat2) / 2 
+var p = kat1 + kat2 + s
+print("Гипотинуза = \(sqrt(Double(gip)))")
+print("Площадь треугольника = \(s)")
+print("Периметр треугольника = \(p)")
+
+
+//Задание №3
+var vklad, procent, srok: Double
+print("Введите размер вклада")
+vklad = Double(readLine(strippingNewline: true)!)!
+print("Введите процент по вкладу")
+procent  = Double(readLine(strippingNewline: true)!)!
+print("Введите срок вклада")
+srok   = Double(readLine(strippingNewline: true)!)!
+var dengi = vklad
+for _ in 1...Int(srok){
+    dengi += (dengi * procent / 100)
+}
+var vyhlop = dengi - vklad
+print ("Ваша прибыль за лет \(srok) равна: \(vyhlop)руб.")
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1248}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
